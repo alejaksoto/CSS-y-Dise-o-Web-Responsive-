@@ -13,9 +13,15 @@ header {
 
 }
 
+@media (max-width: 900px) {
+ #contenido {
+		text-align: center;
+		color: black;
+	}
+}
+
 #contenido {
 	margin: 1%;
-	text-align: center;
 	width: 900px;
 	display: inline;
 }
@@ -87,6 +93,10 @@ figure img {
 	transform: translate2d(20px, -5px)
 	padding: 50px;
 	background-color: #d5c75f;
+	isplay: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
 }
 
 #imagen3 img:hover{
@@ -114,6 +124,20 @@ figure img {
 	filter: grayscale(100%);
 }
 #sepia img{
-	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	-webkit-filter: sepia(90%);
 	filter: sepia(90%);
+}
+
+@media (min-width: 900px) {
+.imagen1 {
+width: 100%;
+}
+
+.imagen2, .imagen3 {
+width: 50%;
+}
+
+@media (max-width: 900px) {
+.blur, .gris4, .gris3, .gris2, .sepia {
+width: 50%;
 }
