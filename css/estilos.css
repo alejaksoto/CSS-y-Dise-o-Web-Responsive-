@@ -1,0 +1,143 @@
+body {
+	font-family: 'Dancing Script', cursive;
+	margin-left: 5%;
+	background-color: #02010a;
+}
+
+header {
+	color: white;
+	text-shadow: 2px  #02010a;
+	border-radius: 10px;
+	background-color: #5b7989;
+	text-align: right;
+
+}
+
+@media (max-width: 900px) {
+ #contenido {
+		text-align: center;
+		color: black;
+	}
+}
+
+#contenido {
+	margin: 1%;
+	width: 900px;
+	display: inline;
+}
+
+
+header h1 {
+	padding-left: 1%;
+	font-size: 1.5em;
+	text-align: left;
+}
+
+footer {
+	-webkit-column-count:4;
+    -moz-column-count:4;
+    column-count:4;
+
+	font-size: 0.8em;
+	border-radius: 10px;
+	text-align: center;
+	color: black;
+	background-color: #C6d5c5;
+}
+
+figure {
+	text-align: center;
+	color: black;
+	
+}
+
+figure img {
+	width: 80%;
+}
+
+#imagen1 img{
+	transition-property: border;
+	transition-duration: 0.5s;
+	background-color: #82c3a6;
+	text-align: center;
+	padding: 50px;
+	margin: 20px;
+
+}
+
+#imagen1 img:hover{
+	border: solid 4px black;
+}
+
+#imagen2 img{
+	transition: width 1s, height 1s, transform 1s;
+	background-color: #d5c75f;
+	border: 1px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	border-color: #82c3a6;
+	padding: 50px;
+	
+}
+
+#imagen2 img:hover{
+	transform: rotate(10deg);
+}
+
+
+#imagen3 img{
+	transform-property:border;
+	transition-duration: 1s;
+	transform: translate2d(20px, -5px)
+	padding: 50px;
+	background-color: #d5c75f;
+	isplay: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+#imagen3 img:hover{
+	border: solid 2px #82c3a6;
+	
+}
+
+#gris2 img{
+	-webkit-filter: grayscale(80%);
+	filter: grayscale(80%);
+}
+
+#blur img{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+
+#gris3 img{
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+}
+
+#gris4 img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#sepia img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
+@media (min-width: 900px) {
+.imagen1 {
+width: 100%;
+}
+
+.imagen2, .imagen3 {
+width: 50%;
+}
+
+@media (max-width: 900px) {
+.blur, .gris4, .gris3, .gris2, .sepia {
+width: 50%;
+}
