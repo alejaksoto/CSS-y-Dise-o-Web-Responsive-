@@ -1,4 +1,4 @@
-body {
+body {	
 	font-family: 'Dancing Script', cursive;
 	margin-left: 5%;
 	background-color: #02010a;
@@ -23,8 +23,7 @@ header {
 	}
 	-webkit-column-count:3;
     -moz-column-count:3;
-    column-count:3;
-   
+    column-count:3; 
 
 }
 
@@ -37,6 +36,10 @@ header {
 .contenedor {
 	display: flex;
 	flex-direction: row;
+	-webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+
 }
 
 header h1 {
@@ -56,6 +59,7 @@ footer {
 	color: black;
 	background-color: #C6d5c5;
 }
+
 
 figure {
 	text-align: center;
@@ -137,4 +141,24 @@ figure {
 #sepia img{
 	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
 	filter: sepia(90%);
+}
+
+@media (max-width: 900px) {
+ 
+ .contenedor {
+	display: block;
+	block-direction: row; 
+}
+figure img {
+	width: 100%;
+	padding: 5px;
+	margin: 5px;
+
+	}
+ footer {
+	-webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+
+
 }
