@@ -13,11 +13,19 @@ header {
 
 }
 
-@media (max-width: 900px) {
- #contenido {
-		text-align: center;
-		color: black;
+@media (min-width: 900px) {
+ 
+ figure img {
+	width: 80%;
+	padding: 50px;
+	margin: 20px;
+
 	}
+	-webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+   
+
 }
 
 #contenido {
@@ -26,6 +34,10 @@ header {
 	display: inline;
 }
 
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
 
 header h1 {
 	padding-left: 1%;
@@ -51,10 +63,6 @@ figure {
 	
 }
 
-figure img {
-	width: 80%;
-}
-
 #imagen1 img{
 	transition-property: border;
 	transition-duration: 0.5s;
@@ -62,6 +70,7 @@ figure img {
 	text-align: center;
 	padding: 50px;
 	margin: 20px;
+	width: 80%;
 
 }
 
@@ -79,6 +88,7 @@ figure img {
 	flex-flow: row wrap;
 	border-color: #82c3a6;
 	padding: 50px;
+	width: 80%;
 	
 }
 
@@ -93,10 +103,11 @@ figure img {
 	transform: translate2d(20px, -5px)
 	padding: 50px;
 	background-color: #d5c75f;
-	isplay: -webkit-flex;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
+	width: 80%;
 }
 
 #imagen3 img:hover{
@@ -126,18 +137,4 @@ figure img {
 #sepia img{
 	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
 	filter: sepia(90%);
-}
-
-@media (min-width: 900px) {
-.imagen1 {
-width: 100%;
-}
-
-.imagen2, .imagen3 {
-width: 50%;
-}
-
-@media (max-width: 900px) {
-.blur, .gris4, .gris3, .gris2, .sepia {
-width: 50%;
 }
